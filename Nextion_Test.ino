@@ -75,21 +75,21 @@ Value = 60;
 }
 void loop(void) 
 { 
-Wifi_Check();  
-ArduinoOTA.handle();
-// Serial.println(Value);
-memset(buffer,0,sizeof(buffer));
-itoa(Value,buffer,10);
-t3.setText(buffer); 
-// inject your code to retrieve value from dht11
-// set value you retrieved from your dht11
-if (Value >0)
-{
-Value = Value -1;
-}
-else if (Value =1)
-{
-Value = 60;
+  Wifi_Check();  
+  ArduinoOTA.handle();
+  // Serial.println(Value);
+  memset(buffer,0,sizeof(buffer));
+  itoa(Value,buffer,10);
+  t3.setText(buffer); 
+  // inject your code to retrieve value from dht11
+  // set value you retrieved from your dht11
+  if (Value >0)
+  {
+  Value = Value -1;
+  }
+  else if (Value =1)
+  {
+  Value = 60;
 } 
 
 delay(100);
@@ -100,10 +100,10 @@ void Wifi_Check()
 
 if ( WiFi.status() != WL_CONNECTED )
 { 
- digitalWrite(WiFi_LED, HIGH); // Wifi Disconnect 
+  digitalWrite(WiFi_LED, HIGH); // Wifi Disconnect 
 }
 else if ( WiFi.status() == WL_CONNECTED )
 {
- digitalWrite(WiFi_LED, LOW);// Wifi Connect 
+  digitalWrite(WiFi_LED, LOW);// Wifi Connect 
 }
 }
