@@ -1,3 +1,1 @@
-# Arduino
-Arduino
-My first Git
+1. 使用Nextion Display
