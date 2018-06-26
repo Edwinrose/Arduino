@@ -1,4 +1,4 @@
-int ledPin = 2; //GPIO2 (D4)
+int ledPin = 2; //GPIO2 (ESP-12E pin D4)
 void setup() 
 {
   pinMode(ledPin, OUTPUT);
